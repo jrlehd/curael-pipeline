@@ -34,15 +34,18 @@
 - 월별 핵심 지표 생성
 - 방문 수, 고유 환자 수, 실질 매출, ARPU, 신규/기존 환자 분포 분석
 
----
+
+```
 
 ## 📁 폴더 구조
 
+```
 project_root/
 │
 ├─ run_modules.py
 ├─ README.md
 ├─ .gitignore
+├─ requirements.txt
 │
 ├─ modules/
 │    ├─ tag_merged.py
@@ -53,8 +56,7 @@ project_root/
 │    └─ kpi_builder.py
 │
 └─ data/        (입력/출력 용도. CSV 파일은 GitHub에 업로드하지 않음)
-
----
+```
 
 ## ⚙️ 실행 방법
 
