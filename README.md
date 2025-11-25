@@ -49,6 +49,8 @@ curael-pipeline/
 └─ dist/                 # PyInstaller 빌드 결과 (GitHub 업로드 제외)
      └─ CURAEL_Pipeline.exe
 .venv/, data/, dist/, build/ 등은 .gitignore 처리됨.
+```
+
 
 ⚙️ 기능 설명
 1️⃣ 암종(태그) 병합 – tag_merged.py
