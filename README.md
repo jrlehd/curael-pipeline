@@ -29,32 +29,27 @@
 
 curael-pipeline/
 │
-├─ gui_app.py # GUI 프로그램 메인 파일 (PySide6)
-├─ run_modules.py # 콘솔 기반 실행 관리자
+├─ gui_app.py            # GUI 프로그램 메인 파일 (PySide6)
+├─ run_modules.py        # 콘솔 기반 실행 관리자
 ├─ requirements.txt
 ├─ README.md
 │
-├─ modules/ # 실제 데이터 처리 모듈
-│ ├─ tag_merged.py
-│ ├─ merge_and_summary.py
-│ ├─ vip_snapshot.py
-│ ├─ vip_diff.py
-│ ├─ crm_scoring.py
-│ └─ kpi_builder.py
+├─ modules/              # 실제 데이터 처리 모듈
+│    ├─ tag_merged.py
+│    ├─ merge_and_summary.py
+│    ├─ vip_snapshot.py
+│    ├─ vip_diff.py
+│    ├─ crm_scoring.py
+│    └─ kpi_builder.py
 │
-├─ data/ # (업로드 금지) 입력/출력 CSV/XLSX
-│ ├─ patient_data_merged.csv
-│ ├─ merged_with_tag.csv
-│ ├─ *_업데이트.csv
-│ └─ ...
+├─ data/                 # (업로드 금지) 입력/출력용 CSV/XLSX
+│    ├─ patient_data_merged.csv
+│    ├─ merged_with_tag.csv
+│    ├─ *_업데이트.csv
+│    └─ ...
 │
-└─ dist/ # PyInstaller 빌드 결과 
-└─ CURAEL_Pipeline.exe
-
-```text
-
-> `.venv/`, `data/`, `dist/`, `build/` 등은 `.gitignore`로 제외됨.
-
+└─ dist/                 # PyInstaller 빌드 결과 (GitHub 업로드 제외)
+     └─ CURAEL_Pipeline.exe
 ---
 
 ## ⚙️ 기능 개요
