@@ -51,6 +51,7 @@ curael-pipeline/
 └─ dist/ # PyInstaller 빌드 결과 
 └─ CURAEL_Pipeline.exe
 
+```text
 
 > `.venv/`, `data/`, `dist/`, `build/` 등은 `.gitignore`로 제외됨.
 
