@@ -48,11 +48,9 @@ curael-pipeline/
 │ ├─ *_업데이트.csv
 │ └─ ...
 │
-└─ dist/ # PyInstaller 빌드 결과 (업로드 금지)
+└─ dist/ # PyInstaller 빌드 결과 
 └─ CURAEL_Pipeline.exe
 
-yaml
-코드 복사
 
 > `.venv/`, `data/`, `dist/`, `build/` 등은 `.gitignore`로 제외됨.
 
@@ -103,8 +101,6 @@ GUI 메인 파일:
 
 gui_app.py
 
-yaml
-코드 복사
 
 ---
 
@@ -115,24 +111,16 @@ python gui_app.py
 📦 EXE 생성 방법 (PyInstaller)
 가상환경 활성화 후:
 
-bash
-코드 복사
 pip install -r requirements.txt
 pip install PySide6 pyinstaller
 EXE 생성:
 
-bash
-코드 복사
 pyinstaller --onefile --noconsole gui_app.py
 생성된 EXE 위치:
 
-bash
-코드 복사
 dist/gui_app.exe
 배포 폴더 구성 예:
 
-kotlin
-코드 복사
 CURAEL_Pipeline/
 │
 ├─ CURAEL_Pipeline.exe
