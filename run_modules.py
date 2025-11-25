@@ -206,20 +206,15 @@ def run_vip_diff():
 
 
 def run_crm():
-    """
-    [5] CRM 점수화/분류
-    - 기준 파일: data/의 가장 최신 *_업데이트.csv
-    - 출력: data/base_name_환자분류_결과.csv
-    """
-    print("\n[5] CRM 점수화/분류 실행")
+    from modules.crm_scoring import run_crm_scoring
 
     latest_update = find_latest("*_업데이트.csv")
     if latest_update is None:
-        print("  ❌ '*_업데이트.csv' 패턴에 맞는 파일을 찾지 못했습니다.")
-        print("     → 먼저 [2] 마스터 병합 + 요약을 실행해 업데이트 파일을 만드세요.")
+        print("  ❌ '_업데이트.csv' 파일을 찾지 못했습니다.")
         return
 
-    base_name = latest_update.stem
+    base_name = latest_update.stem  # 예: '20251117_업데이트'
+    print(f"[5] CRM 점수화/분류 실행")
     print(f"  ▶ 기준 파일(base_name): {base_name} (from {latest_update})")
 
     run_crm_scoring(
